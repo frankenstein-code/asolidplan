@@ -6,7 +6,7 @@ export default function HeroCarousel() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://lipsum.app/random/1200x600"
+          src="https://lipsum.app/random/1200x500"
           alt="First slide"
         />
         {/* <Carousel.Caption>
@@ -18,7 +18,7 @@ export default function HeroCarousel() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://lipsum.app/random/1200x600"
+          src="https://lipsum.app/random/1200x500"
           alt="Second slide"
         />
       </Carousel.Item>
@@ -26,7 +26,7 @@ export default function HeroCarousel() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://lipsum.app/random/1200x600"
+          src="https://lipsum.app/random/1200x500"
           alt="Third slide"
         />
       </Carousel.Item>
