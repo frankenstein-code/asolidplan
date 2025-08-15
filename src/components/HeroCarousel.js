@@ -2,7 +2,7 @@ import { Carousel } from "react-bootstrap";
 
 export default function HeroCarousel() {
   return (
-    <Carousel>
+    <Carousel className="my-5">
       <Carousel.Item>
         <img
           className="d-block w-100"

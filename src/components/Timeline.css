@@ -1,105 +1,81 @@
-.wavy-wrap {
+.timeline-structure {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.timeline-start-label,
+.timeline-end-label {
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-left: -50px;
+}
+
+.timeline-path {
   position: relative;
-  width: 100%;
-  height: 220px; /* adjust section height */
-  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
 }
 
-.wavy-svg {
+.timeline-track {
   position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
+  left: 9px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: black;
+  z-index: 0;
 }
 
-.wavy-path {
-  fill: none;
-  stroke: #050709; /* Bootstrap primary */
-  stroke-width: 4;
-  stroke-linecap: round;
-  opacity: 0.7;
+.timeline-node {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  cursor: pointer;
+  z-index: 1;
 }
 
-/* point container is positioned relative to wave */
-.wavy-point {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  outline: none;
+.timeline-marker {
+  width: 20px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 50%;
+  border: 3px solid #ccc;
+  margin-right: 10px;
+  transition: 0.3s;
 }
 
-.dot {
-  width: 14px;
-  height: 14px;
-  border-radius: 999px;
-  background: #0d6efd;
-  box-shadow: 0 0 0 6px rgba(13, 110, 253, 0.15);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+.timeline-marker.highlight {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
 }
 
-.wavy-point:hover .dot,
-.wavy-point:focus .dot {
-  transform: scale(1.15);
-  box-shadow: 0 0 0 10px rgba(13, 110, 253, 0.18);
+.timeline-step-text {
+  font-size: 14px;
+  color: #555;
 }
 
-.time {
-  margin-top: 8px;
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: #212529;
+.timeline-node.current .timeline-step-text {
+  font-weight: bold;
+  color: #0d6efd;
 }
 
-/* overlay */
-.overlay {
-  position: absolute;
-  left: 50%;
-  top: -60px; /* sits above the dot */
-  transform: translateX(-50%);
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity 0.15s ease, transform 0.15s ease;
-}
-
-.wavy-point:hover .overlay,
-.wavy-point:focus .overlay {
-  opacity: 1;
-  transform: translateX(-50%) translateY(-4px);
-}
-
-.overlay-inner {
-  background: #212529;
-  color: #fff;
+.timeline-info-box {
+  background-color: #f8f9fa;
+  padding: 20px;
   border-radius: 10px;
-  padding: 8px 12px;
-  white-space: nowrap;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
-  font-size: 0.9rem;
+  min-height: 350px;
+  border: 1px solid #ddd;
 }
 
-.o-line {
-  line-height: 1.2;
+.timeline-desktop-only {
+  display: none; /* Hide on small screens */
 }
 
-/* responsive */
-@media (max-width: 768px) {
-  .wavy-wrap {
-    height: 200px;
-  }
-  .overlay-inner {
-    font-size: 0.85rem;
-  }
-  .time {
-    font-size: 0.85rem;
-  }
-}
-
-.desktop-only {
-  display: none;
-}
-
-@media (min-width: 1024px) {
-  .desktop-only {
-    display: block;
+@media (min-width: 992px) {
+  .timeline-desktop-only {
+    display: block; /* Show on desktop */
   }
 }

@@ -18,11 +18,11 @@ export default function LandingPage() {
       {/* Our Work */}
       <MultiCardCarousel />
 
+      <OurServices />
+
       {/* Your Journey */}
       <Timeline />
       <TimelineMobile />
-
-      <OurServices />
 
       <ImageTextSection />
     </>
