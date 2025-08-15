@@ -6,36 +6,37 @@ const steps = [
   {
     title: "Concept / Pre-Design (PD)",
     description:
-      "Understand client needs, site, and budget. Create initial concepts and cost estimates.",
+      "This initial phase focuses on understanding the client’s needs, including the project scope, features, budget, and site constraints. We conduct a thorough site survey and analyze potential challenges and opportunities. Based on this information, we prepare a design brief that aligns with the client’s vision. Conceptual designs are then created referencing the requirements, along with a rough cost estimate based on area. This stage sets the foundation for the entire project and ensures all parties share a clear understanding of goals before moving forward.",
   },
   {
     title: "Schematic Design (SD)",
     description:
-      "Develop sketches and options, check regulations, set the design direction.",
+      "During schematic design, we develop a series of rough sketches and drawings that capture the basic concepts of the design. This phase includes space planning with schematic plans and addressing unbuilt areas. Initial research on local compliance and regulations is completed to ensure feasibility. Detailed design drawings such as plans, sections, elevations, and 3D models are prepared. Coordination with structural consultants happens at this point to integrate structural drawings. The goal is to shape the overall design direction and provide a visual understanding of the proposed space.",
   },
   {
     title: "Construction Drawings (CD)",
     description:
-      "Produce detailed technical, electrical, and plumbing plans for construction.",
+      "In this phase, we prepare comprehensive technical drawings, including electrical, plumbing, and lighting layouts in coordination with relevant consultants. Working drawings are issued alongside site work to avoid rework caused by design changes due to site conditions or new information. A Construction Manager oversees daily work to ensure quality and compliance with contract documents. We also prepare initial bills of quantities and tender documents to help clients select suitable contractors. Close coordination with other consultants and site supervision ensures the project progresses smoothly according to plans.",
   },
   {
     title: "Design Development",
     description:
-      "Select materials, finalize layouts, coordinate with consultants for quality.",
+      "Design development focuses on refining and finalizing the architectural plans. We specify materials, window and door placements, and general structural details. This phase overlaps with the construction stage, supporting ongoing work with updated plans and 3D visualizations as needed. Coordination with consultants continues to ensure all technical and design requirements are met. The aim is to solidify design choices and ensure all elements are well-integrated before and during construction.",
   },
   {
     title: "Construction Stage",
     description:
-      "Visit site, monitor progress, resolve changes, and ensure quality.",
+      "The construction stage is when the design intent is brought to life on-site. Regular site visits are conducted to monitor progress, clarify decisions, and ensure work aligns with drawings and specifications. Any design changes are discussed with the client to maintain alignment with their vision. We attend meetings and site conferences to manage quality, timing, and budgets. By maintaining close oversight and communication, we help navigate challenges and keep the project moving toward successful completion.",
   },
   {
     title: "Interior Stage",
     description:
-      "Design interior layouts, finishes, lighting, furniture, and accessories.",
+      "This phase encompasses the detailed design and coordination of all interior elements. We prepare concept drawings, material palettes, mood boards, and detailed working drawings for finishes, furniture, lighting, and accessories. Coordination with specialists such as HVAC and kitchen consultants is essential. We manage site supervision to ensure specifications are followed, approve contractor shop drawings, and offer 3D visualizations if needed. The goal is to create a cohesive, functional, and beautiful interior space tailored to the project's requirements.",
   },
   {
     title: "Final Set-up",
-    description: "Styling, accessorizing, and seamless handover to the client.",
+    description:
+      "The final set-up phase involves the purchase and installation of accessories and the finishing touches that bring the project to completion. This includes styling, organizing, and arranging all elements as intended to create a polished and inviting atmosphere. We oversee the handover process, ensuring everything is in place and meets the expected quality standards. This stage marks the successful conclusion of the project and the delivery of a space ready for use and enjoyment.",
   },
 ];
 

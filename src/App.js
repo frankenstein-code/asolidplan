@@ -4,7 +4,6 @@ import LandingPage from "./pages/LandingPage";
 import ProjectsPage from "./pages/ProjectsPage";
 import ContactPage from "./pages/ContactPage";
 import BlogPage from "./pages/BlogPage";
-import GalleryPage from "./pages/GalleryPage";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import Footer from "./components/Footer";
 
@@ -19,15 +18,15 @@ function App() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link as={Link} to="/projects">
+              {/* <Nav.Link as={Link} to="/projects">
                 Projects
-              </Nav.Link>
+              </Nav.Link> */}
               <Nav.Link as={Link} to="/gallery">
                 Gallery
               </Nav.Link>
-              <Nav.Link as={Link} to="/blog">
+              {/* <Nav.Link as={Link} to="/blog">
                 Blog
-              </Nav.Link>
+              </Nav.Link> */}
               <Nav.Link as={Link} to="/contact">
                 Contact
               </Nav.Link>
@@ -40,7 +39,6 @@ function App() {
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/projects" element={<ProjectsPage />} />
-          <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
