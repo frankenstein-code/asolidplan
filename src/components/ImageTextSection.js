@@ -1,5 +1,6 @@
 import { Container, Row, Col, Button, Image } from "react-bootstrap";
 import aboutus from "../assets/aboutus/aboutus.jpeg";
+import { Link } from "react-router-dom";
 
 export default function ImageTextSection() {
   return (
@@ -7,7 +8,13 @@ export default function ImageTextSection() {
       <Row className="align-items-center">
         {/* Left Side - Image */}
         <Col md={5} className="text-center mb-4 mb-md-0">
-          <Image src={aboutus} alt="Vertical" fluid />
+          <Image
+            src={aboutus}
+            alt="Vertical"
+            fluid
+            className="img-fluid"
+            style={{ maxHeight: "500px", objectFit: "cover" }}
+          />
         </Col>
 
         {/* Right Side - Text + Buttons */}
@@ -37,7 +44,13 @@ export default function ImageTextSection() {
 
           {/* Buttons */}
           <div className="mt-4">
-            <Button variant="outline-secondary" size="lg" className="me-3">
+            <Button
+              variant="outline-secondary"
+              size="lg"
+              className="me-3"
+              as={Link}
+              to="/projects"
+            >
               View Projects
             </Button>
             <Button

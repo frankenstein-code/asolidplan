@@ -6,6 +6,7 @@ import office_ext from "../assets/cardCarousel/office_ext.jpeg";
 import padel_india from "../assets/cardCarousel/padel_india.jpg";
 import polemo_farm from "../assets/cardCarousel/polemo_farm.jpeg";
 import royal_Apartment from "../assets/cardCarousel/royal_Apartment.jpeg";
+import { Link } from "react-router-dom";
 
 import "./MultiCardCarousel.css";
 
@@ -41,7 +42,15 @@ export default function MultiCardCarousel() {
     <div className="text-center my-5">
       <Container className="d-flex justify-content-between my-3">
         <h1>Our Work</h1>
-        <Button variant="outline-dark">View All Projects</Button>{" "}
+        <Button
+          variant="outline-secondary"
+          size="lg"
+          className="me-3"
+          as={Link}
+          to="/projects"
+        >
+          View All Projects
+        </Button>
       </Container>
       <Carousel
         controls={false}
