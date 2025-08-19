@@ -40,7 +40,13 @@ export default function ImageTextSection() {
             <Button variant="outline-secondary" size="lg" className="me-3">
               View Projects
             </Button>
-            <Button variant="outline-secondary" size="lg">
+            <Button
+              variant="outline-secondary"
+              size="lg"
+              href="https://wa.me/7259318886"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Contact Me
             </Button>
           </div>

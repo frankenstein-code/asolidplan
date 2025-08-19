@@ -7,22 +7,7 @@ export default function Footer() {
       <Container fluid>
         <Row className="text-center">
           <Col>
-            <h5 style={{ marginBottom: "10px" }}>A Solid Plan</h5>
-            <div>
-              <a href="#about" style={{ color: "white", margin: "0 10px" }}>
-                About
-              </a>
-              <a href="#services" style={{ color: "white", margin: "0 10px" }}>
-                Services
-              </a>
-              <a href="#projects" style={{ color: "white", margin: "0 10px" }}>
-                Projects
-              </a>
-              <a href="#contact" style={{ color: "white", margin: "0 10px" }}>
-                Contact
-              </a>
-            </div>
-
+            <h5 style={{ marginBottom: "10px" }}>a solid plan</h5>
             {/* Social Links */}
             <div style={{ marginTop: "15px" }}>
               <a
@@ -46,7 +31,7 @@ export default function Footer() {
             <div
               style={{ fontSize: "0.85rem", color: "#aaa", marginTop: "10px" }}
             >
-              © {new Date().getFullYear()} A Solid Plan. All rights reserved.
+              © {new Date().getFullYear()} a solid plan. All rights reserved.
             </div>
           </Col>
         </Row>

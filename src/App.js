@@ -16,12 +16,12 @@ function App() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link as={Link} to="/gallery">
+              <Nav.Link as={Link} to="/projects">
                 Gallery
               </Nav.Link>
-              <Nav.Link as={Link} to="/contact">
+              {/* <Nav.Link as={Link} to="/contact">
                 Contact
-              </Nav.Link>
+              </Nav.Link> */}
             </Nav>
           </Navbar.Collapse>
         </Container>
