@@ -10,7 +10,7 @@ export default function LandingPage() {
   return (
     <>
       <HeroCarousel />
-      <Container className="my-5">
+      <Container className="my-3">
         <p className="text-center">architectural design for</p>
         <h2 className="text-center">your desired elevated lifestyle</h2>
       </Container>

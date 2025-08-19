@@ -1,0 +1,7 @@
+.hero-img {
+  width: 100%;
+  height: 500px; /* fix height */
+  max-width: 1200px; /* fix width */
+  margin: 0 auto; /* center it */
+  object-fit: cover; /* crop nicely without distortion */
+}

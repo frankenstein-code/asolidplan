@@ -1,14 +1,21 @@
 import { useState } from "react";
 import { Carousel, Card, Row, Col, Button, Container } from "react-bootstrap";
-import "./CardCarousel.css";
+import bagilu from "../assets/cardCarousel/bagilu.jpg";
+import gataway_cabin from "../assets/cardCarousel/gataway_cabin.jpeg";
+import office_ext from "../assets/cardCarousel/office_ext.jpeg";
+import padel_india from "../assets/cardCarousel/padel_india.jpg";
+import polemo_farm from "../assets/cardCarousel/polemo_farm.jpeg";
+import royal_Apartment from "../assets/cardCarousel/royal_Apartment.jpeg";
+
+import "./MultiCardCarousel.css";
 
 const cardData = [
-  { img: "https://picsum.photos/300/200?random=1", title: "Card 1" },
-  { img: "https://picsum.photos/300/200?random=2", title: "Card 2" },
-  { img: "https://picsum.photos/300/200?random=3", title: "Card 3" },
-  { img: "https://picsum.photos/300/200?random=4", title: "Card 4" },
-  { img: "https://picsum.photos/300/200?random=5", title: "Card 5" },
-  { img: "https://picsum.photos/300/200?random=6", title: "Card 6" },
+  { img: bagilu, title: "Bagilu Project" },
+  { img: gataway_cabin, title: "Gateway Cabin" },
+  { img: office_ext, title: "Office Exterior" },
+  { img: padel_india, title: "Padel India" },
+  { img: polemo_farm, title: "Polemo Farm" },
+  { img: royal_Apartment, title: "Royal Apartment" },
 ];
 
 // Utility to split data into chunks
@@ -31,7 +38,7 @@ export default function MultiCardCarousel() {
   const next = () => setIndex((i) => (i + 1) % slides.length);
 
   return (
-    <div className="text-center my-4">
+    <div className="text-center my-5">
       <Container className="d-flex justify-content-between my-3">
         <h1>Our Work</h1>
         <Button variant="outline-dark">View All Projects</Button>{" "}
@@ -41,7 +48,7 @@ export default function MultiCardCarousel() {
         indicators={false}
         activeIndex={index}
         onSelect={setIndex}
-        interval={3000}
+        interval={6000}
         pause="hover"
       >
         {slides.map((group, idx) => (

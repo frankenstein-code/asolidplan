@@ -1,12 +1,13 @@
 import { Container, Row, Col, Button, Image } from "react-bootstrap";
+import aboutus from "../assets/aboutus/aboutus.jpeg";
 
 export default function ImageTextSection() {
   return (
-    <Container className="my-5 px-5">
+    <Container className="my-5">
       <Row className="align-items-center">
         {/* Left Side - Image */}
         <Col md={5} className="text-center mb-4 mb-md-0">
-          <Image src="https://lipsum.app/random/600x700" alt="Vertical" fluid />
+          <Image src={aboutus} alt="Vertical" fluid />
         </Col>
 
         {/* Right Side - Text + Buttons */}

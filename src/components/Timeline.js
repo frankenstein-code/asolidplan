@@ -44,7 +44,7 @@ export default function Timeline() {
   const [selectedStep, setSelectedStep] = useState(0);
 
   return (
-    <Container className="py-5 timeline-desktop-only">
+    <Container className="my-5 timeline-desktop-only">
       <Row>
         {/* Vertical Steps Column */}
         <Col md={4} className="timeline-structure">
