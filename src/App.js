@@ -19,7 +19,12 @@ function App() {
 
   return (
     <Router>
-      <Navbar bg="dark" variant="dark" expand="lg" fixed="top">
+      <Navbar
+        expand="lg"
+        fixed="top"
+        className="shadow"
+        style={{ backgroundColor: "#F6F4F0" }}
+      >
         <Container>
           <Navbar.Brand as={Link} to="/">
             <span className={`fade-text ${showIntro ? "visible" : "hidden"}`}>
