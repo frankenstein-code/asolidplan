@@ -1,81 +1,129 @@
+/* Container */
+.timeline-container {
+  font-family: "Inter", sans-serif;
+  color: #000; /* keep all text black */
+}
+
+/* Steps column */
 .timeline-structure {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  position: relative;
 }
 
-.timeline-start-label,
-.timeline-end-label {
-  font-weight: bold;
-  margin-bottom: 20px;
-  margin-left: -50px;
+/* Labels */
+.timeline-label {
+  font-weight: 700; /* make it bolder */
+  font-size: 18px; /* slightly bigger */
+  color: #000; /* black text */
+  margin-bottom: 25px;
+  position: relative;
+  letter-spacing: 0.5px; /* adds elegance */
+  text-transform: uppercase; /* gives authority */
 }
 
+.timeline-label.start {
+  padding-left: 18px;
+}
+
+.timeline-label.end {
+  padding-left: 18px;
+  margin-top: 20px;
+}
+
+/* Path */
 .timeline-path {
   position: relative;
   display: flex;
   flex-direction: column;
-  padding-left: 20px;
+  padding-left: 3px;
 }
 
 .timeline-track {
   position: absolute;
-  left: 9px;
+  left: 10px;
   top: 0;
   bottom: 0;
-  width: 2px;
-  background-color: black;
+  width: 3px;
+  background: #d9c4b0; /* requested color */
+  border-radius: 2px;
   z-index: 0;
 }
 
+/* Node */
 .timeline-node {
   position: relative;
   display: flex;
   align-items: center;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   cursor: pointer;
   z-index: 1;
+  transition: 0.2s ease-in-out;
+}
+
+.timeline-node:hover .timeline-step-text {
+  color: #777; /* hover = grey */
 }
 
 .timeline-marker {
-  width: 20px;
-  height: 20px;
-  background-color: #ccc;
+  width: 18px;
+  height: 18px;
+  background-color: #e0e0e0;
   border-radius: 50%;
-  border: 3px solid #ccc;
-  margin-right: 10px;
-  transition: 0.3s;
+  border: 3px solid #e0e0e0;
+  margin-right: 12px;
+  transition: all 0.3s ease;
 }
 
 .timeline-marker.highlight {
-  background-color: #0d6efd;
-  border-color: #0d6efd;
+  background-color: #d9c4b0;
+  border-color: #d9c4b0;
+  box-shadow: 0 0 8px rgba(217, 196, 176, 0.6);
 }
 
+/* Step text */
 .timeline-step-text {
-  font-size: 14px;
-  color: #555;
+  font-size: 15px;
+  color: #000; /* always black */
+  transition: 0.3s;
 }
 
 .timeline-node.current .timeline-step-text {
-  font-weight: bold;
-  color: #0d6efd;
+  font-weight: 600;
+  color: #000; /* bold black for selected step */
 }
 
+/* Info box */
 .timeline-info-box {
-  background-color: #f8f9fa;
-  padding: 20px;
-  border-radius: 10px;
-  min-height: 350px;
-  border: 1px solid #ddd;
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  min-height: 260px;
+  transition: 0.3s;
 }
 
+.timeline-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #000; /* black */
+}
+
+.timeline-description {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #000; /* black */
+}
+
+/* Desktop-only */
 .timeline-desktop-only {
-  display: none; /* Hide on small screens */
+  display: none;
 }
 
 @media (min-width: 992px) {
   .timeline-desktop-only {
-    display: block; /* Show on desktop */
+    display: block;
   }
 }

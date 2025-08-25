@@ -4,14 +4,28 @@ import LandingPage from "./pages/LandingPage";
 import ProjectsPage from "./pages/ProjectsPage";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import Footer from "./components/Footer";
+import { useEffect, useState } from "react";
 
 function App() {
+  const [showIntro, setShowIntro] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowIntro(false);
+    }, 3000); // 3 seconds
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <Router>
       <Navbar bg="dark" variant="dark" expand="lg" fixed="top">
         <Container>
           <Navbar.Brand as={Link} to="/">
-            <i>it all starts with</i> <b>a solid plan</b>
+            <span className={`fade-text ${showIntro ? "visible" : "hidden"}`}>
+              <i>it all starts with</i>
+            </span>{" "}
+            <b>a solid plan</b>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
@@ -19,9 +33,6 @@ function App() {
               <Nav.Link as={Link} to="/projects">
                 Gallery
               </Nav.Link>
-              {/* <Nav.Link as={Link} to="/contact">
-                Contact
-              </Nav.Link> */}
             </Nav>
           </Navbar.Collapse>
         </Container>
